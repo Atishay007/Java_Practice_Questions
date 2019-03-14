@@ -59,6 +59,8 @@ public class AtishayList<T> {
 		Node<T> secondLastNode = null;
 		int i = size - 1;
 		while (i >= 0) {
+			// CASE: when there is only one element.
+			// In this case head and tail will be same.
 			if (size == 1) {
 				if (tempNode.value == input) {
 					head = null;
@@ -75,10 +77,12 @@ public class AtishayList<T> {
 						// This node is needed when the matching node is last node
 						// so we have to make tail node as second last node
 						// as last node is deleted.
+						// The last node should have next pointer as null.
 						secondLastNode.next = null;
 						tail = secondLastNode;
 					}
 					secondLastNode = tempNode.next;
+					// On Deletion of Node, the size should be reduced.
 					--i;
 					--size;
 				}
