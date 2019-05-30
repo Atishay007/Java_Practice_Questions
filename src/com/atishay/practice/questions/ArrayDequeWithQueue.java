@@ -5,10 +5,11 @@ import java.util.Deque;
 
 //Using ArrayDeque for Queue
 //Rule: FIFO (First In First Out.)
-public class ArrayDequePractice {
+public class ArrayDequeWithQueue {
 	public static void main(String[] args) {
 		Deque<Integer> queue = new ArrayDeque<>();
 
+		//Use offer method to put element in the end of the queue.
 		queue.offer(10);
 		queue.offer(0);
 		queue.offer(20);
