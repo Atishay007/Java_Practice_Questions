@@ -1,6 +1,9 @@
 package com.atishay.practice.questions;
 
-//Classic Example of Thread DeadLock
+//Classic Example of Thread DeadLock.
+//We can detect Thread DeadLock using 
+//1. Jconsole
+//2. Java Mission Control
 public class ThreadDeadLock {
 	public static void main(String[] args) {
 		Object pen = new Object();
@@ -30,7 +33,11 @@ class Thread1 extends Thread {
 	@Override
 	public void run() {
 		synchronized (book) {
-			try {Thread.sleep(1000);} catch (InterruptedException e) {e.printStackTrace();}
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			synchronized (pen) {
 				System.out.println("Thread 1 working");
 			}
@@ -52,7 +59,11 @@ class Thread2 extends Thread {
 	@Override
 	public void run() {
 		synchronized (pen) {
-			try {Thread.sleep(1000);} catch (InterruptedException e) {e.printStackTrace();}
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			synchronized (book) {
 				System.out.println("Thread 2 working");
 			}
