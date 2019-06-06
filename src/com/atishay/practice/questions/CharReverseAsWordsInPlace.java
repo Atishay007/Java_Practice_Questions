@@ -1,6 +1,6 @@
 package com.atishay.practice.questions;
 
-//InPlace sorting
+//InPlace reversing of the char array.
 //1. Reverse the whole String
 //2. Reverse the word on their place.
 public class CharReverseAsWordsInPlace {
