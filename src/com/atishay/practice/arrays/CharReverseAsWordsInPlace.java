@@ -1,4 +1,4 @@
-package com.atishay.practice.questions;
+package com.atishay.practice.arrays;
 
 //InPlace reversing of the char array.
 //1. Reverse the whole String

@@ -1,4 +1,4 @@
-package com.atishay.practice.questions;
+package com.atishay.practice.stack;
 
 import java.util.EmptyStackException;
 

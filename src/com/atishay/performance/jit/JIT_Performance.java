@@ -1,4 +1,4 @@
-package org.atishay.performance.jit;
+package com.atishay.performance.jit;
 
 //Proof that JIT(Just in Time Compiler) works on method.
 //It analyze and then convert the repeated method

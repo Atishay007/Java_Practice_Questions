@@ -1,9 +1,9 @@
-package com.atishay.practice.questions;
+package com.atishay.practice.stack;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-public class GenerateAllParenthesesStack {
+public class CheckAllParenthesesStack {
 	public static void main(String[] args) {
 		String A = "])";
 		char arr[] = A.toCharArray();

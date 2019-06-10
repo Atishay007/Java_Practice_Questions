@@ -1,4 +1,4 @@
-package com.atishay.practice.questions;
+package com.atishay.practice.arrays;
 
 public class CharReverseAsWords {
 	public static void main(String[] args) {
