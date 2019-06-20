@@ -11,7 +11,7 @@ restore(short), which expands the shortened string into the original url. If no 
 Hint: What if we enter the same URL twice?*/
 
 //This will create a random 6 character alphanumeric String.
-//A basic core idea bheind Building URL Shortner.
+//A basic core idea behind Building URL Shortner.
 public class SecureRandom_URL_ShortnerImpl {
 	public static void main(String[] args) {
 		SecureRandom rnd = new SecureRandom();
