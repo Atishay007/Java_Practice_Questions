@@ -22,9 +22,9 @@ public class FindIndicesBetweenTwoProgrammerString {
 		List<Character> lstChar = createArray();
 		int originalLength = 10;
 		int count = 0;
-		boolean stringFound = false;
 		boolean startingPoint = false;
 		int i = 0;
+		boolean stringFound = false;
 		for (; i < s.length(); i++) {
 			if (!startingPoint && !lstChar.contains(arr[i])) {
 				continue;
@@ -36,10 +36,16 @@ public class FindIndicesBetweenTwoProgrammerString {
 			}
 
 			if (count == originalLength) {
+				stringFound = true;
 				break;
 			}
 		}
 
+		if (!stringFound) {
+			return 0;
+		}
+
+		stringFound = false;
 		startingPoint = false;
 		count = 0;
 
@@ -55,6 +61,7 @@ public class FindIndicesBetweenTwoProgrammerString {
 			}
 
 			if (count == originalLength) {
+				stringFound = true;
 				break;
 			}
 		}
