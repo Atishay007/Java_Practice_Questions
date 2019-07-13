@@ -9,6 +9,9 @@ Implement a URL shortener with the following methods:
 shorten(url), which shortens the url into a six-character alphanumeric string, such as zLg6wl.
 restore(short), which expands the shortened string into the original url. If no such shortened string exists, return null.
 Hint: What if we enter the same URL twice?*/
+//Ans: For this we can store the URL as key in HashMap and its respective URL shortner as a value.
+// We can check whether URL is same or not from HashMap and we can also check its value and
+//can have validations on them.
 
 //This will create a random 6 character alphanumeric String.
 //A basic core idea behind Building URL Shortner.
