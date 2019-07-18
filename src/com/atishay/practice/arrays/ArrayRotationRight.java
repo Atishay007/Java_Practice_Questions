@@ -2,7 +2,9 @@ package com.atishay.practice.arrays;
 
 import java.util.Arrays;
 
-public class ArrayRotation {
+//This was a first time solution
+//A poor solution.
+public class ArrayRotationRight {
 	public static void main(String[] args) {
 		int tempLast = 0;
 		int tempCurrent = 0;

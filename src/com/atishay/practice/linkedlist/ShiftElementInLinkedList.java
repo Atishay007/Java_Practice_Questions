@@ -6,6 +6,8 @@ import java.util.Stack;
 
 import com.atishay.practice.linkedlist.LinkedListRotation.Node;
 
+//Very Poor Solution
+//This was my first solution.
 public class ShiftElementInLinkedList {
 	public static void main(String[] args) {
 		LinkedListRotation<Integer> lst = new LinkedListRotation<>();
