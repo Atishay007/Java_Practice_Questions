@@ -68,6 +68,7 @@ class BinaryTree {
 		return root;
 	}
 
+	// InOrder Traversal
 	public void inOrderTraversal(Node root) {
 		if (root != null) {
 			inOrderTraversal(root.left);
@@ -76,6 +77,7 @@ class BinaryTree {
 		}
 	}
 
+	// Pre Order Traversal
 	public void preOrderTraversal(Node root) {
 		if (root != null) {
 			System.out.println(root.value);
@@ -84,6 +86,7 @@ class BinaryTree {
 		}
 	}
 
+	// Post Order Traversal
 	public void postOrderTraversal(Node root) {
 		if (root != null) {
 			postOrderTraversal(root.left);
@@ -92,6 +95,7 @@ class BinaryTree {
 		}
 	}
 
+	// Level Order Traversal
 	public void levelOrderTraversal(Node root) {
 		if (root != null) {
 			Deque<Node> queue = new ArrayDeque<>();
