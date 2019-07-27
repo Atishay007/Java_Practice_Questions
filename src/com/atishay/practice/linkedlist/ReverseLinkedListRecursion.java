@@ -4,7 +4,11 @@ import java.util.NoSuchElementException;
 
 import com.atishay.practice.linkedlist.CustomLinkedListI.Node;
 
-//Reversing LinkedList using Recursion.
+/*Reversing LinkedList using Recursion.
+40<-20<-10: Recursion moves to last node
+In this program we have to put base condition till second last node
+We will stop at 20 then we will use next->next property/
+*/
 public class ReverseLinkedListRecursion {
 	public static void main(String[] args) {
 		CustomLinkedListI lst = new CustomLinkedListI();
