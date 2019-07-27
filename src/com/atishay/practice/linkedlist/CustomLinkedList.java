@@ -7,7 +7,7 @@ public class CustomLinkedList<T> {
 	private Node<T> tail;
 	private int size = 0;
 
-	static class Node<T> {
+	public class Node<T> {
 		private Node<T> next;
 		private T value;
 

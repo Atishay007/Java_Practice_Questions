@@ -4,13 +4,13 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Stack;
 
-import com.atishay.practice.linkedlist.LinkedListRotation.Node;
+import com.atishay.practice.linkedlist.LinkedListRotationII.Node;
 
 //Very Poor Solution
 //This was my first solution.
-public class ShiftElementInLinkedList {
+public class ShiftElementInLinkedListI {
 	public static void main(String[] args) {
-		LinkedListRotation<Integer> lst = new LinkedListRotation<>();
+		LinkedListRotationII<Integer> lst = new LinkedListRotationII<>();
 		lst.add(10);
 		lst.add(20);
 		lst.add(30);

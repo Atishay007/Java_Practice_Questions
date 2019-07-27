@@ -2,7 +2,7 @@ package com.atishay.practice.linkedlist;
 
 import java.util.NoSuchElementException;
 
-public class LinkedListRotation<T> {
+public class LinkedListRotationII<T> {
 	private Node<T> head;
 	private Node<T> tail;
 	private int size = 0;
