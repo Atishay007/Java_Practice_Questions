@@ -9,13 +9,16 @@ import java.util.List;
 public class WaveArray {
 	public static void main(String[] args) {
 		// List<Integer> lst = new ArrayList(Arrays.asList(1, 2, 3));
-		List<Integer> lst = new ArrayList(Arrays.asList(8, 9, 2, 4));
+		List<Integer> lst = new ArrayList<>(Arrays.asList(8, 9, 2, 4));
 		int sizeCondition = 0;
+
+		// 2 scenarios: Length can be negative or positive.
 		if (lst.size() % 2 == 0) {
 			sizeCondition = lst.size();
 		} else {
 			sizeCondition = lst.size() - 1;
 		}
+
 		for (int i = 0; i < sizeCondition; i++) {
 			int temp = lst.get(i);
 			lst.set(i, lst.get(i + 1));
