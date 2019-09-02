@@ -5,6 +5,9 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
+//Here Graph is represented using Adjacent list.
+//It can be represent using Adjacent Matrix.
+//Time Complexity: O(V+E)
 public class BreadthFirstSearch {
 	public static void main(String[] args) {
 		Vertex v1 = new Vertex(1);
