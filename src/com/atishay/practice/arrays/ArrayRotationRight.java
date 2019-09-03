@@ -2,33 +2,22 @@ package com.atishay.practice.arrays;
 
 import java.util.Arrays;
 
-//This was a first time solution
-//A poor solution.
-public class ArrayRotationRight {
+public class ArrayRotationRightEasy {
 	public static void main(String[] args) {
-		int tempLast = 0;
-		int tempCurrent = 0;
 
 		int[] arr = { 1, 2, 3, 4 };
 		// Array Should be rotated 2 times.
 		int n = 2;
 		int j = 0;
 		while (j < n) {
-			for (int i = 1; i < arr.length; i++) {
-				if (i == 1) {
-					tempLast = arr[i];
-					arr[i] = arr[i - 1];
-				} else {
-					tempCurrent = arr[i];
-					arr[i] = tempLast;
-					tempLast = tempCurrent;
-				}
+			int temp = arr[arr.length-1];
+			for (int i = arr.length - 1; i > 0; i--) {
+				arr[i] = arr[i - 1];
 			}
-			arr[0] = tempLast;
-
-			Arrays.stream(arr).forEach(System.out::print);
-			System.out.println();
+			arr[0] = temp;
 			j++;
 		}
+
+		Arrays.stream(arr).forEach(System.out::print);
 	}
 }
