@@ -1,4 +1,4 @@
-package com.atishay.practice.arrays;
+package com.atishay.practice.sorting;
 
 import java.util.Arrays;
 
