@@ -10,7 +10,8 @@ import java.util.Map.Entry;
 public class FirstUniqueCharacterInString {
 
 	public static void main(String[] args) {
-		findFirstUniqueCharacter("ccdde");
+		String s = "loveleetcode"; // ccddee //abccddeea
+		findFirstUniqueCharacter(s);
 	}
 
 	private static void findFirstUniqueCharacter(String str) {
