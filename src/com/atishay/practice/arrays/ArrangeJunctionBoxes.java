@@ -10,7 +10,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-//Amazon Interview Question.
+//Amazon Interview Question, First round coding test.
+//Don't know the full question.
+//I have to sort the strings in some manner.
 public class ArrangeJunctionBoxes {
 
 	public static void main(String[] args) {
