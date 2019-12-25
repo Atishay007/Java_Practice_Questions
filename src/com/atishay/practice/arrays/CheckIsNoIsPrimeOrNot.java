@@ -1,7 +1,7 @@
 package com.atishay.practice.arrays;
 
-//Runtime complexity: O(n)
-//Space complexity: O(n)
+//Runtime complexity: O(n/2)
+//Space complexity: O(1)
 //Prime No is that no which is divisible by 1 or by itself.
 public class CheckIsNoIsPrimeOrNot {
 	public static void main(String[] args) {
