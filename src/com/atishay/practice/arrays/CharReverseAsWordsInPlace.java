@@ -1,5 +1,8 @@
 package com.atishay.practice.arrays;
 
+import java.util.Arrays;
+
+//Runtime Complexity: O(n)
 //InPlace reversing of the char array.
 //1. Reverse the whole String
 //2. Reverse the word on their place.
@@ -15,40 +18,41 @@ public class CharReverseAsWordsInPlace {
 
 		System.out.println("");
 
+		// O(n)
 		for (int i = 0, j = arr.length - 1; i < j; i++, j--) {
 			char temp = arr[j];
 			arr[j] = arr[i];
 			arr[i] = temp;
 		}
 
-		System.out.println("New Array: ");
-		for (int i = 0; i < arr.length; i++) {
-			System.out.print(arr[i]);
-		}
+		int i = 0;
+		int j = 0;
 
-		int startCount = 0;
-		for (int i = 0; i < arr.length; i++) {
+		// O(n)
+		for (; i < arr.length; i++) {
 			if (arr[i] == ' ') {
-				for (int k = startCount, l = i - 1; k < l; k++, l--) {
-					char temp = arr[k];
-					arr[k] = arr[l];
-					arr[l] = temp;
-				}
-				startCount = i + 1;
+				swapChar(arr, j, i);
+				j = i + 1;
 			}
-		}
 
-		// For reversing last word.
-		for (int k = startCount, j = arr.length - 1; k < j; k++, j--) {
-			char temp = arr[k];
-			arr[k] = arr[j];
-			arr[j] = temp;
+			// Swapping last word.As last word doesn't have space.
+			if (i == arr.length - 1) {
+				swapChar(arr, j, i + 1); // O(n)
+			}
 		}
 
 		System.out.println(" ");
 		System.out.println("Reversed: ");
-		for (int i = 0; i < arr.length; i++) {
-			System.out.print(arr[i]);
+		System.out.println(Arrays.toString(arr));
+	}
+
+	// O(n)
+	private static void swapChar(char[] arr, int startIndex, int lastIndex) {
+		--lastIndex;
+		for (; startIndex <= lastIndex; startIndex++, lastIndex--) {
+			char temp = arr[startIndex];
+			arr[startIndex] = arr[lastIndex];
+			arr[lastIndex] = temp;
 		}
 	}
 }
