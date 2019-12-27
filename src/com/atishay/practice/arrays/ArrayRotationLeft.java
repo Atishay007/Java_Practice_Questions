@@ -20,6 +20,6 @@ public class ArrayRotationLeft {
 			j++;
 		}
 
-		Arrays.stream(arr).forEach(System.out::print);
+		System.out.println(Arrays.toString(arr));
 	}
 }

@@ -1,6 +1,9 @@
 package com.atishay.practice.arrays;
 
-//O(1) space and O(n) time complexity.
+//Space Complexity: O(1) 
+//RunTime Complexity: O(n)
+//No. in array are repeated even no. of times.
+//Find no. that is present only one or odd no. of time.
 //Using XOR
 public class FindNoOfOddOccurrenceInArray {
 	public static void main(String[] args) {
