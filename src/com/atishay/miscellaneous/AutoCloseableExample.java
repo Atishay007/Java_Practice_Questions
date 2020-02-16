@@ -16,7 +16,7 @@ class TestMe implements AutoCloseable {
 
 	@Override
 	public void close() throws Exception {
-		System.out.println("Resources are getting AutoClosed using AutCloseable.");
+		System.out.println("Resources are getting AutoClosed using AutCloseable interface.");
 	}
 }
 
