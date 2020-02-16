@@ -7,7 +7,7 @@ public class AutoCloseableExample {
 
 	public static void main(String[] args) throws Exception {
 		try (TestMe2 testMe = new TestMe2()) {
-			System.out.println("Working with TestMe");
+			System.out.println("Working with TestMe2.");
 		}
 	}
 }
