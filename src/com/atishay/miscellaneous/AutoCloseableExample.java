@@ -24,6 +24,6 @@ class TestMe2 implements Closeable {
 //It also has same functionality as AutoCloseable.
 	@Override
 	public void close() throws IOException {
-		System.out.println("Resources are getting AutoClosed implementing Closesable interface");
+		System.out.println("Resources are getting AutoClosed implementing Closesable interface.");
 	}
 }
